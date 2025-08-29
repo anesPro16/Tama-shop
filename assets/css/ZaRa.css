@@ -1,0 +1,18 @@
+body {font-size: 16px;}
+
+.tom-zal{
+	color:#fff;
+	background-color:#ff3a3a;
+	border-color:#ff3a3a;
+}
+.tom-zal:hover{
+	color:#fff;
+	background-color:#df2020;
+	border-color:#c31c1c;
+}
+.tom-zal.focus,.tom-zal:focus{
+	color:#fff;
+	background-color:#df2020;
+	border-color:#c31c1c;
+	box-shadow:0 0 0 .2rem rgba(105,136,228,.5);
+}

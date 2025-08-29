@@ -1,0 +1,173 @@
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	height: 60px;
+	padding: 0 20px;
+	background: #003;
+}
+
+nav img {
+	width: 30px;
+	height: 30px;
+}
+
+.fa-bars {
+	display: none;
+	cursor: pointer;
+}
+
+a.nama-toko {
+	color: #fff;
+	line-height: 18px;
+	width: 90px;
+}
+
+.item-menu,
+.menu {
+	display: flex;
+	gap: 12px;
+}
+
+.menu-kiri a:hover {border-bottom: 1px solid #ddd;}
+
+.menu-kanan {
+	position: relative;
+	margin-left: auto;
+	gap: 16px;
+}
+
+.menu-kanan .fa {
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	margin: 1em;
+}
+
+.menu a,
+.menu a:is(:visited, :active) {
+	color: #fff;
+	text-decoration: none;
+	line-height: 24px;
+	margin: 0;
+}
+a.nama-toko,
+.menu a:hover {color: #fff; text-decoration: none;}
+
+.cari {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*background: #0d1117;*/
+	background: #fff;
+	border: 1px solid #30363d;
+	border-radius: 24px;
+	padding-right: 4px;
+	width: 40%;
+}
+
+.cari input {
+	background: transparent;
+	border: 0;
+	border-radius: 18px;
+	color: #000;
+	font-size: 16px;
+	font-family: inherit;
+	padding: 4px 7px;
+	justify-content: space-around;
+	width: 90%;
+}
+
+.cari button {
+	background: transparent;
+	border: 0;
+	border-radius: 10px;
+	color: #8b949e;
+	margin-left: 1em;
+	padding: 4px 2px;
+	width: 40px;
+}
+
+@media (width  < 898px) {
+	a,
+	a:is(:visited, :active) {
+		margin: 0;
+		padding: 0;
+	}
+	.cari {width: 24%;}
+}
+
+@media (width < 710px ) {
+	a.nama-toko {
+		width: 90px;
+		margin: 0;
+	}
+
+	.cari {width: 40%;}
+	.item-menu {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		gap: 16px;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		padding: 0 20px 20px;
+		background: #161b22;
+		border: 0;
+		outline: none;
+		z-index: 10;
+	}
+
+	.menu-kiri {
+		margin: 1em 0 0;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.menu-kiri a {
+		padding: 4px;
+		width: 80px;
+		border-radius: 30px;
+	}
+
+	.menu-kiri a:last-child {
+		width: 70px;
+	}
+
+	.menu-kiri a:hover {
+		box-shadow: 0 0 7px 0px #0f0,
+								0 0 11px 0 #40ff40,
+								0 0 15px 0 #60ff60;
+		border: none;
+	}
+
+	.menu-kanan {
+		margin-left: 0;
+		gap: 18px;
+	}
+
+	.fa-bars {
+		display: block;
+	}
+
+	.turun {
+		position: relative;
+		top: 230px;
+	}
+}
+
+body.open .item-menu {
+	display: flex;
+}
+
+@media (width  < 967px ) {
+	a.nama-toko {width: 45px; text-align: center;}
+}
+
+@media (width  < 504px ) {
+	a.nama-toko {width: 45px;}
+}
+
+p {color: #fff;}

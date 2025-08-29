@@ -1,0 +1,67 @@
+body {font-size: 16px;}
+.tom{
+	display:inline-block;
+	font-weight:400;
+	color:#858796;
+	text-align:center;
+	vertical-align:middle;
+	border:1px solid transparent;
+	padding:.375rem .75rem;
+	margin: 0;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius: 1.35rem;
+	transition:color .35s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.tom-kecil {
+	padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+	border-radius: 1.35rem;
+}
+
+.tom-primary{
+	color:#fff;
+	background-color:#4e73df;
+	border-color:#4e73df;
+}
+.tom-primary:hover{
+	color:#fff;
+	background-color:#2e59d9;
+	border-color:#2653d4;
+}
+.tom-primary.focus,.tom-primary:focus{
+	color:#fff;
+	background-color:#2e59d9;
+	border-color:#2653d4;
+	box-shadow:0 0 0 .2rem rgba(105,136,228,.5);
+}
+
+.tom-abu{
+	color:#000;
+	background-color:#ddd;
+	border-color:#f8f8f8;
+}
+
+.tom-danger {
+ color:#fff;
+ background-color:#e74a3b;
+ border-color:#e74a3b
+}
+
+a.teks-biasa:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.table td,
+.table th {vertical-align: middle;}
+
+.table-border td,
+.table-border th {border: 1px solid #003;}
+
+ul.kontak li {
+	list-style: none;
+	list-style-type: none;
+	margin-left: 0.5em;
+}

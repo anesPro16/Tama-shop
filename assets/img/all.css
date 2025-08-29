@@ -1,0 +1,105 @@
+* {margin: 0;padding: 0;}
+
+body {
+	background-color: #dcd;
+	font-family: 'open_sansregular', sans-serif;
+}
+
+/* container */
+.wadah {
+	display: grid;
+	font-size: 19px;
+	grid-gap: 11px;
+	margin: 2em;
+}
+
+/* servies */
+.katalog {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+
+.kartu {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.2);
+	text-align: center;
+}
+
+.kartu [class^="icon-"] {
+	font-size: 2.8em;
+}
+
+.kartu img {width: 100%; height: 60%; border-radius: 50%;}
+
+.kartu p {
+	font-weight: 200;
+	letter-spacing: 1px;
+	font-size: 0.8em; 
+	text-align: center;
+}
+
+.kartu .ket {
+	background-color: #f9ff10;
+	height: 42px;
+	margin: 0px;
+}
+
+.kartu span {
+	font-size: 0.7em;
+	color: #666;
+}
+
+.kartu h3 {
+	font-size: 1em;
+	margin: 0px 0;
+	padding: .4em;
+	background-color: #0f0;
+}
+
+.kartu a {
+	background-color: #60ff60;
+	border-radius: 25px;
+	color: #000;
+	display: inline-block;
+	margin: 5px auto 0;
+	padding: .5em;
+	text-decoration: none;
+	width: 40%;
+}
+
+.kartu a.detail {
+	background-color: #0bf;
+	margin: 0 auto;
+}
+
+/* responsive */
+@media (max-width: 1044px) {
+	.kartu a {border-radius: 20px; margin: 4px auto 0; padding: 0.3em; width: 30%;}
+	.kartu h3 {padding: 0.2em;}
+}
+@media (max-width: 959px) {
+	.kartu.none {display: block !important; visibility: hidden;}
+	.kartu {margin: 1em 0 0;}
+}
+
+@media (max-width: 768px) {
+
+	.kartu.none {display: none !important;}
+}
+
+@media (max-width: 600px) {
+	body {
+		margin: 14px;
+	}
+	.header {
+		grid-template-areas: 
+		'hero'
+		'feature-1'
+		'feature-2';
+	}
+}
+
+.kartu.none {display: none;}

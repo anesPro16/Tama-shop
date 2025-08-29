@@ -1,0 +1,115 @@
+.kontrol {
+	border: 0;
+	border-radius: 8px;
+	outline: none;
+	width: 350px;
+	height: 56px;
+	padding: 0 16px;
+	background-color: rgba(255,255,255,.1);
+	border-radius: 6px;
+	color: #f9f9f9;
+	margin: 8px 0;
+	font-family: inherit;
+	text-align: left;
+	font-size: 1.2em;
+	transition: .4s;
+}
+
+.kartu-login {
+	background-color: rgba(0,0,0,.7);
+	border-radius: 1.25rem;
+	margin: 7em auto;
+	padding: 20px 30px 32px;
+	text-align: center;
+	width: 400px;
+}
+
+.kartu-login > h2 {
+	font-family: sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	margin: 0 0 6px;
+	color: #f9f9f9;
+}
+
+.kartu-login img {
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid rgba(255,255,255,.4);
+}
+
+.kartu-login > h3 {
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 0 0 10px;
+	color: #837f90;
+}
+
+.form-login {
+	width: 100%;
+	margin: 0;
+	display: grid;
+}
+
+.form-login input.kontrol::placeholder {
+	color: #868b94;
+}
+
+.form-login > button.kontrol {
+	background-color: #f9f9f9;
+	border: 0;
+	border-radius: 30px;
+	color: #000;
+	cursor: pointer;
+	padding: 0 16px;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 600;
+	height: 56px;
+	letter-spacing: 2px;
+	margin: 1em auto;
+	text-align: center;
+	transition: all .37s;
+	width: 95%;
+}
+
+.pengguna {
+	position: relative;
+}
+
+.wa-pw {
+	position: relative;
+}
+
+#toggle:before {
+	color: #fff;
+	content: "\f070";
+	cursor: pointer;
+	font-family: 'Font Awesome 6 Free';
+	height: 30px;
+	position: absolute;
+	bottom: 16px;
+	right: 30px;
+	/*top: 102px;*/
+	width: 30px;
+}
+
+#toggle.merem::before {
+	font-family: 'Font Awesome 6 Free';
+	content: "\f06e";
+}
+
+a.daf {
+	font-size: 1em;
+	text-decoration: none;
+	color: #fff;
+}
+
+a.daf:hover {
+	color: #bdd;
+}
+
+body {
+	background: linear-gradient(to top, #54a3ff 50%, #006eed 80%);
+	height: 100vh;
+}

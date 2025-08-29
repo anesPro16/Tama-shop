@@ -1,0 +1,124 @@
+body {
+	/*background-color: #dcd;*/
+	font-family: 'open_sansregular', sans-serif;
+}
+
+.wadah {
+	display: grid;
+	font-size: 19px;
+	grid-gap: 11px;
+	margin: 2em;
+}
+
+.katalog {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 0fr));
+	grid-gap: 20px;
+	justify-content: center;
+}
+
+.kartu {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.2);
+	height: 312px;
+	text-align: center;
+}
+
+.kartu [class^="icon-"] {
+	font-size: 2.8em;
+}
+
+.kartu img {width: 100%; height: 60%;}
+.kartu img.kosong {filter: grayscale(1);}
+img.kosong {filter: grayscale(1);}
+
+.kartu p {
+	color: #333;
+	font-size: 0.8em; 
+	font-weight: 200;
+	padding: .5em 0;
+	letter-spacing: 1px;
+	text-align: center;
+	background: #C1F6FF;
+	margin-bottom: 0;
+}
+
+.kartu .ket {
+	background-color: #f9ff10;
+	height: 42px;
+	margin: 0px;
+}
+
+.kartu span {
+	font-size: 0.7em;
+	color: #202020;
+}
+
+.kartu h3 {
+	color: #202020;
+	background-color: #ACEEAC;
+	font-size: 1em;
+	margin: 0px 0;
+	padding: .4em;
+}
+
+p.pesan,
+p.kosong,
+p.detail {
+	background-color: #60ff60;
+	border-radius: 25px;
+	color: #000;
+	display: inline-block;
+	margin: 5px auto 0;
+	padding: .5em;
+	text-decoration: none;
+	width: 40%;
+}
+
+p.detail {
+	background-color: #7fe7f9;
+	margin: 0 auto;
+}
+
+p.kosong {
+	background-color: #003;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+/* responsive */
+@media (max-width: 1044px) {
+	.kartu a {border-radius: 20px; margin: 4px auto 0; padding: 0em; width: 30%;}
+	.kartu h3 {padding: 0.2em;}
+}
+@media (max-width: 959px) {
+	.kartu.none {display: none !important; visibility: hidden;}
+	.kartu {margin: 1em 0 0;}
+}
+
+@media (max-width: 792px) {
+
+	.kartu.none {display: none !important;}
+	.kartu a {font-size: 0.9em;}
+
+	.katalog {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(185px, 0fr));
+		grid-gap: 20px;
+		justify-content: center;
+	}
+}
+
+
+@media (max-width: 640px) {
+	.katalog {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		grid-gap: 15px;
+	}
+}
+
+.kartu.none {display: none;}
