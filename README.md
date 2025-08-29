@@ -1,22 +1,6 @@
-# Aplikasi Toko Online Amyrn Shop
+# Aplikasi Toko Online Tama Shop
 
 Ini merupakan sebuah aplikasi Toko Online sederhana menggunakan framework Codeigniter 3
-
-Aliya Rafida Zahra (Nim : 19215082)
-
-Mutiara Ghassani (Nim : 19215194)
-
-Nanda Tamala Sari (Nim : 19215163)
-
-Rizal Arfian (Nim : 19215332)
-
-Yohanes Eka Putra (Nim : 19215347)
-
-<img src="daftar.png" width="400" alt="Toko Online"></img>
-<img src="login.png" width="400" alt="Toko Online"></img>
-<br>
-<img src="home.png" width="400" alt="Toko Online"></img>
-<img src="cart.png" width="400" alt="Toko Online"></img>
 
 #### Login
 #### Master
